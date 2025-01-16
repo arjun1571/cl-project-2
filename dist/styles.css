@@ -576,6 +576,11 @@ video {
   margin-bottom: 1.75rem;
 }
 
+.my-\[0\.5em\] {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 .my-\[10px\] {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -586,9 +591,8 @@ video {
   margin-bottom: 20px;
 }
 
-.my-\[0\.5em\] {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 
 .mb-4 {
@@ -643,32 +647,12 @@ video {
   margin-top: 7px;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
-}
-
-.mb-14 {
-  margin-bottom: 3.5rem;
-}
-
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
-}
-
-.h-\[49px\] {
-  height: 49px;
-}
-
-.h-auto {
-  height: auto;
 }
 
 .h-\[200px\] {
@@ -679,8 +663,20 @@ video {
   height: 30px;
 }
 
+.h-\[49px\] {
+  height: 49px;
+}
+
+.h-auto {
+  height: auto;
+}
+
 .w-\[114px\] {
   width: 114px;
+}
+
+.w-\[170px\] {
+  width: 170px;
 }
 
 .w-\[72\%\] {
@@ -697,10 +693,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[170px\] {
-  width: 170px;
 }
 
 .max-w-\[600px\] {
@@ -751,14 +743,19 @@ video {
   border-width: 2px;
 }
 
+.border-\[\#888888\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(136 136 136 / var(--tw-border-opacity, 1));
+}
+
 .border-\[\#fde45b\] {
   --tw-border-opacity: 1;
   border-color: rgb(253 228 91 / var(--tw-border-opacity, 1));
 }
 
-.border-\[\#888888\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(136 136 136 / var(--tw-border-opacity, 1));
+.bg-\[\#0492ff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 146 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#33C8FF\] {
@@ -801,13 +798,13 @@ video {
   background-color: rgb(255 163 0 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[\#0492ff\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(4 146 255 / var(--tw-bg-opacity, 1));
-}
-
 .p-\[10px\] {
   padding: 10px;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-\[10px\] {
@@ -853,11 +850,6 @@ video {
 .py-\[6px\] {
   padding-top: 6px;
   padding-bottom: 6px;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .pb-\[10px\] {
