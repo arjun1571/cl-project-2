@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LogIn</title>
+    <title>Register</title>
     <link href="./dist/styles.css" rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
@@ -16,15 +16,8 @@
         <img src="./image/megapersonalsPageHeader 1.png" alt="">
     </div>
     <div>
-        <p class="mt-[20px] mb-[10px] text-center text-[#b7a690] text-[18px] font-medium">Is this your first time
-            posting?
-        </p>
-        <div class="flex mx-auto items-center justify-center bg-[#0492ff] rounded-[3px] p-[3px] w-[245px]">
 
-            <button class=" text-white text-[25px] font-bold cursor-pointer text-center "><a href="register.html">Start
-                    Here</a></button>
-        </div>
-        <p class="mt-[20px] mb-[10px] text-center text-[#b7a690] text-[18px] font-medium">Already have an account?
+        <p class="mt-[20px] mb-[10px] text-center text-[#b7a690] text-[18px] font-medium">Create New Login
         </p>
         <div class="flex mx-auto items-center justify-center w-full">
             <div class="w-[243px]">
@@ -35,8 +28,21 @@
                 <input type="password" placeholder="password"
                     class="mt-[8px] border-[2px] border-[#888888] py-[2px] px-3 rounded-[3px] text-[18px]">
 
+                <input type="password" placeholder="Confirm password"
+                    class="mt-[8px] border-[2px] border-[#888888] py-[2px] px-3 rounded-[3px] text-[18px]">
+
                 <input type="password" placeholder="Enter code from the picture"
                     class="mt-[8px] border-[2px] border-[#888888] py-[2px] px-3 rounded-[3px] text-[18px]">
+
+                <div class="mt-[10px]">
+                    <label class="flex items-start space-x-2">
+                        <input type="checkbox" required class="mt-1">
+                        <span class="text-[14px] cursor-pointer">
+                            I certify that I am 18 years of age or older, that I am placing ads for myself, under my own
+                            phone number, and that I am abiding by all local laws and regulations.
+                        </span>
+                    </label>
+                </div>
 
                 <div class="flex items-center justify-center">
 
@@ -54,7 +60,8 @@
             <h3 class="absolute right-[190px] top-8 text-[50px] font-bold">?</h3>
 
         </div>
-        <p class="text-[#0000EE] text-[14px] text-center mt-[20px] hover:underline">FORGOT PASSWORD?</p>
+        <p class="text-[#b8b8b8] text-[14px] text-center mt-[20px] hover:underline font-bold">Already have an account?
+        </p>
     </div>
 
 
