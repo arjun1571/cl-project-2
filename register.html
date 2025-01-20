@@ -11,16 +11,16 @@
         rel="stylesheet" />
 </head>
 
-<body class="max-w-[600px] mx-auto px-[15px]">
-    <div class="w-[72%] mx-auto mt-[38px]">
+<body class="max-w-[600px] mx-auto">
+    <div class="w-[72%] mx-auto mt-[38px] mb-[25px]">
         <img src="./image/megapersonalsPageHeader 1.png" alt="">
     </div>
     <div>
 
-        <p class="mt-[20px] mb-[10px] text-center text-[#b7a690] text-[18px] font-medium">Create New Login
+        <p class="mt-[7px] mb-[10px] text-center text-[#b7a690] text-[25px] font-medium">Create New Login
         </p>
-        <div class="flex mx-auto items-center justify-center w-full">
-            <div class="w-[243px]">
+        <div class="flex mx-auto items-center justify-center w-[243px]">
+            <div class="">
 
                 <input type="text" placeholder="Email"
                     class=" border-[2px] border-[#888888] py-[2px] px-3 rounded-[3px] text-[18px]">
@@ -30,6 +30,18 @@
 
                 <input type="password" placeholder="Confirm password"
                     class="mt-[8px] border-[2px] border-[#888888] py-[2px] px-3 rounded-[3px] text-[18px]">
+
+                <div class="flex items-center gap-[4px] mt-[10px] justify-between">
+                    <!-- CAPTCHA Image -->
+                    <div class="max-w-[200px] border-[2px] border-[#808080] p-[2px] rounded-[4px]">
+                        <img id="captcha-image" src="./image/cp-1.png" alt=""
+                            class="rounded-[2px] w-[191px] max-h-[36px]">
+                    </div>
+                    <!-- Reload Button -->
+                    <div class="cursor-pointer" id="reload-button">
+                        <img src="./image/reloadButton.png" alt="reload-button" class="h-10 w-10 text-[14px]">
+                    </div>
+                </div>
 
                 <input type="password" placeholder="Enter code from the picture"
                     class="mt-[8px] border-[2px] border-[#888888] py-[2px] px-3 rounded-[3px] text-[18px]">
@@ -47,7 +59,7 @@
                 <div class="flex items-center justify-center">
 
                     <button
-                        class="bg-[#feb161] text-[20px] text-white mt-[10px] w-[108px] h-[43px] font-bold ">SUBMIT</button>
+                        class="bg-[#feb161] text-[20px] text-white mt-[10px] w-[108px] h-[43px] font-bold px-[6px] py-[1px] rounded-[3px]">SUBMIT</button>
                 </div>
 
             </div>
@@ -60,7 +72,8 @@
             <h3 class="absolute right-[190px] top-8 text-[50px] font-bold">?</h3>
 
         </div>
-        <p class="text-[#b8b8b8] text-[14px] text-center mt-[20px] hover:underline font-bold">Already have an account?
+        <p class="text-[#b8b8b8] text-[14px] text-center mt-[10px] mb-14 hover:underline font-bold">Already have an
+            account?
         </p>
     </div>
 
@@ -81,6 +94,27 @@
         <p class="text-center text-[#046aaf] py-[2px] font-[Verdana] text-[12px]">Copyright ©2024 MegaPersonals.eu</p>
 
     </footer>
+
+
+    <script>
+        const captchaImages = [
+            "./image/cp-1.png",
+            "./image/cp-2.png",
+            "./image/cp-3.png",
+            "./image/cp-4.png",
+            "./image/cp-5.png",
+            "./image/cp-6.png",
+            "./image/cp-7.png"
+        ];
+
+        const captchaImage = document.getElementById("captcha-image");
+        const reloadButton = document.getElementById("reload-button");
+
+        reloadButton.addEventListener("click", () => {
+            const randomIndex = Math.floor(Math.random() * captchaImages.length);
+            captchaImage.src = captchaImages[randomIndex];
+        });
+    </script>
 
 </body>
 
