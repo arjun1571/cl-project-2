@@ -19,21 +19,34 @@
         <p class="mt-[20px] mb-[10px] text-center text-[#b7a690] text-[18px] font-medium">Is this your first time
             posting?
         </p>
-        <div class="flex mx-auto items-center justify-center bg-[#0492ff] rounded-[3px] p-[3px] w-[245px]">
+        <div class="flex mx-auto items-center justify-center bg-[#0492ff] rounded-[3px] p-[3px] w-[245px] h-[37px]">
 
-            <button class=" text-white text-[25px] font-bold cursor-pointer text-center "><a href="register.html">Start
+            <button class=" text-white text-[25px] font-bold cursor-pointer text-center  "><a href="register.html">Start
                     Here</a></button>
         </div>
         <p class="mt-[20px] mb-[10px] text-center text-[#b7a690] text-[18px] font-medium">Already have an account?
         </p>
-        <div class="flex mx-auto items-center justify-center w-full">
-            <div class="w-[243px]">
+        <div class="flex mx-auto items-center justify-center max-w-[243px]">
+            <div class="">
 
                 <input type="text" placeholder="Email"
                     class=" border-[2px] border-[#888888] py-[2px] px-3 rounded-[3px] text-[18px]">
 
                 <input type="password" placeholder="password"
                     class="mt-[8px] border-[2px] border-[#888888] py-[2px] px-3 rounded-[3px] text-[18px]">
+
+                <div class="flex items-center gap-[4px] mt-[10px] justify-between">
+                    <!-- CAPTCHA Image -->
+                    <div class="max-w-[200px] border-[2px] border-[#808080] p-[2px] rounded-[4px]">
+                        <img id="captcha-image" src="./image/cp-1.png" alt=""
+                            class="rounded-[2px] w-[191px] max-h-[36px]">
+                    </div>
+                    <!-- Reload Button -->
+                    <div class="cursor-pointer" id="reload-button">
+                        <img src="./image/reloadButton.png" alt="reload-button" class="h-10 w-10 text-[14px]">
+                    </div>
+                </div>
+
 
                 <input type="password" placeholder="Enter code from the picture"
                     class="mt-[8px] border-[2px] border-[#888888] py-[2px] px-3 rounded-[3px] text-[18px]">
@@ -75,6 +88,27 @@
         <p class="text-center text-[#046aaf] py-[2px] font-[Verdana] text-[12px]">Copyright ©2024 MegaPersonals.eu</p>
 
     </footer>
+
+
+    <script>
+        const captchaImages = [
+            "./image/cp-1.png",
+            "./image/cp-2.png",
+            "./image/cp-3.png",
+            "./image/cp-4.png",
+            "./image/cp-5.png",
+            "./image/cp-6.png",
+            "./image/cp-7.png"
+        ];
+
+        const captchaImage = document.getElementById("captcha-image");
+        const reloadButton = document.getElementById("reload-button");
+
+        reloadButton.addEventListener("click", () => {
+            const randomIndex = Math.floor(Math.random() * captchaImages.length);
+            captchaImage.src = captchaImages[randomIndex];
+        });
+    </script>
 
 </body>
 
