@@ -12,15 +12,15 @@
 </head>
 
 <body class="max-w-[600px] mx-auto px-[15px]">
-    <div class="w-[72%] mx-auto mt-3">
+    <div class="w-[72%] mx-auto mt-[38px]">
         <img src="./image/megapersonalsPageHeader 1.png" alt="">
     </div>
-    <div class="w-[72%] mx-auto my-7">
+    <div class="w-[80%] mx-auto mt-[45px]">
         <img src="./image/support-email-text.png" alt="">
     </div>
-    <div class="pt-[25px] w-[90%] mx-auto">
+    <div class="w-[90%] mt-[36px]  mx-auto">
 
-        <h4 class="text-center text-[#B7A690] text-[25px] mt-[7px] ">Contact Us </h4>
+        <h4 class="text-center text-[#B7A690] text-[25px] mb-[10px]">Contact Us </h4>
 
         <div class="bg-[#fdfeb5] border-[2px] border-[#fde45b] rounded-[25px] p-[10px]">
             <div class="py-[6px] px-[12px]">
@@ -31,11 +31,21 @@
                 <input type="text" placeholder="Your Email Address"
                     class="w-full my-[0.5em] border-[2px] border-[#888888] py-[2px] px-3 rounded-[3px] text-[18px]">
             </div>
-            <div class="py-[6px] px-[12px]">
+            <div class="pt-[6px] px-[12px]">
                 <h3 class="text-center">Message</h3>
                 <textarea class="w-full border-[2px] border-[#888888] h-[200px] text-[18px]" name="" id=""></textarea>
             </div>
-            <div class="py-[6px] px-[12px]">
+            <div class="flex items-center gap-[4px]  px-[12px]">
+                <!-- CAPTCHA Image -->
+                <div class="max-w-[200px] border-[2px] border-[#808080] p-[2px] rounded-[4px]">
+                    <img id="captcha-image" src="./image/cp-1.png" alt="" class="rounded-[2px] w-[191px] max-h-[36px]">
+                </div>
+                <!-- Reload Button -->
+                <div class="cursor-pointer" id="reload-button">
+                    <img src="./image/reloadButton.png" alt="reload-button" class="h-10 w-10 text-[14px]">
+                </div>
+            </div>
+            <div class="pb-[6px] px-[12px]">
                 <input type="text" placeholder="Your Email Address"
                     class="w-full my-[0.5em] border-[2px] border-[#888888] py-[2px] px-3 rounded-[3px] text-[18px]">
             </div>
@@ -48,7 +58,7 @@
 
     </div>
 
-    <footer class="pt-[32px] mb-[32px] ">
+    <footer class="mb-[32px] ">
         <div class="my-[20px] text-center ">
             <a class="text-[#046aaf] py-[2px] font-[Verdana] text-[12px]" href="">Home</a> <span
                 class="text-[#046aaf] text-[12px]">|</span>
@@ -66,6 +76,26 @@
                 class="cursor-pointer hover:underline">support@megapersonals.eu</span></p>
         <p class="text-center text-[#046aaf] py-[2px] font-[Verdana] text-[12px]">OR contact: +40.312.296.179</p>
     </footer>
+
+    <script>
+        const captchaImages = [
+            "./image/cp-1.png",
+            "./image/cp-2.png",
+            "./image/cp-3.png",
+            "./image/cp-4.png",
+            "./image/cp-5.png",
+            "./image/cp-6.png",
+            "./image/cp-7.png"
+        ];
+
+        const captchaImage = document.getElementById("captcha-image");
+        const reloadButton = document.getElementById("reload-button");
+
+        reloadButton.addEventListener("click", () => {
+            const randomIndex = Math.floor(Math.random() * captchaImages.length);
+            captchaImage.src = captchaImages[randomIndex];
+        });
+    </script>
 
 </body>
 
