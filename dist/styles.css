@@ -810,6 +810,26 @@ video {
   margin-top: 9px;
 }
 
+.mt-\[60px\] {
+  margin-top: 60px;
+}
+
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
+.mt-\[55px\] {
+  margin-top: 55px;
+}
+
+.mt-\[53px\] {
+  margin-top: 53px;
+}
+
+.mt-\[54px\] {
+  margin-top: 54px;
+}
+
 .block {
   display: block;
 }
@@ -860,6 +880,14 @@ video {
 
 .h-auto {
   height: auto;
+}
+
+.h-\[92\.9px\] {
+  height: 92.9px;
+}
+
+.h-\[82\.9px\] {
+  height: 82.9px;
 }
 
 .max-h-\[36px\] {
