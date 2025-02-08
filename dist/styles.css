@@ -1795,6 +1795,18 @@ video {
   text-decoration-line: underline;
 }
 
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-25 {
+  opacity: 0.25;
+}
+
+.opacity-30 {
+  opacity: 0.3;
+}
+
 /* ::-webkit-scrollbar {
   width: 3px;
   height: 3px;
